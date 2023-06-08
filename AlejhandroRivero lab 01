@@ -1,0 +1,39 @@
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject1;
+
+import javax.swing.JOptionPane;
+
+
+/**
+ *
+ * @author LABORATORIO 04
+ */
+public class Mavenproject1 {
+
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+        //Solicitar empleados
+        String data;
+        int empleados;
+        data=JOptionPane.showInputDialog("Digite el numero de empelados");
+        empleados= Integer.parseInt(data); 
+        // Variable para hacer el uso de empleados
+        int montot=0;
+        int salario = 0;
+        for (int i = 0; i < empleados; i++ ) {
+            String data2 = JOptionPane.showInputDialog(" Digite el salario " + (i+1)); 
+            salario = Integer.parseInt(data2);
+            
+            montot+=salario;
+                   } 
+        System.out.print("El monto total de los salarios es de: " + montot + "/n");
+        double impuestos = 0.1433;
+        double pago= montot*impuestos;
+        System.out.print("la empresa deberá abonar a la CCSS el monto de"+pago+ "por concepto de SEM y IVM");
+                    
+            
+                }
+   }
+

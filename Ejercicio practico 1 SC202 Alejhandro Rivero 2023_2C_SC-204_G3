@@ -1,4 +1,5 @@
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
 package com.mycompany.mavenproject1;
@@ -17,7 +18,7 @@ public class Mavenproject1 {
         //Solicitar empleados
         String data;
         int empleados;
-        data=JOptionPane.showInputDialog("Digite el numero de empelados");
+        data=JOptionPane.showInputDialog("Digite el numero de empleados");
         empleados= Integer.parseInt(data); 
         // Variable para hacer el uso de empleados
         int montot=0;
@@ -28,12 +29,12 @@ public class Mavenproject1 {
             
             montot+=salario;
                    } 
-        System.out.print("El monto total de los salarios es de: " + montot + "/n");
+        JOptionPane.showMessageDialog(null,"el monto total de los salarios es: "+ montot);
         double impuestos = 0.1433;
         double pago= montot*impuestos;
-        System.out.print("la empresa deberá abonar a la CCSS el monto de"+pago+ "por concepto de SEM y IVM");
-                    
-            
+        JOptionPane.showMessageDialog(null,"la empresa debera abonar a la CCSS por concepto de SEM y IVM el monto de: " + pago);
                 }
    }
+
+
 
